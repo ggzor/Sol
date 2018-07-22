@@ -1,0 +1,36 @@
+{
+  "name": "sol",
+  "version": "1.0.0",
+  "description": "Te amo",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "serve": "webpack-serve --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggzor/Sol.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "ggzor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggzor/Sol/issues"
+  },
+  "homepage": "https://github.com/ggzor/Sol#readme",
+  "dependencies": {
+    "@cycle/dom": "^20.4.0",
+    "@cycle/run": "^4.4.0",
+    "xstream": "^11.7.0"
+  },
+  "devDependencies": {
+    "webpack-serve": "^2.0.2",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
