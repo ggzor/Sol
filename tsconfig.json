@@ -1,13 +1,23 @@
 {
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
         "sourceMap": true,
-        "target": "es3",
-        "module": "es6",
+        "target": "es5",
+        "module": "es2015",
         "lib": [
-            "dom", "es7"
+            "dom", "es2015"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
         ],
         "moduleResolution": "node",
-        "strict": true
+        "strict": true,
+        "paths": {
+            "lodash/*": [
+                "node_modules/@types/lodash-es/*"
+            ],
+        }
     },
     "include": [
         "src/**/*"
