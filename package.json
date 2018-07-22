@@ -23,14 +23,20 @@
   "dependencies": {
     "@cycle/dom": "^20.4.0",
     "@cycle/run": "^4.4.0",
+    "date-fns": "^1.29.0",
+    "lodash": "^4.17.10",
+    "pluralize": "^7.0.0",
     "xstream": "^11.7.0"
   },
   "devDependencies": {
-    "webpack-serve": "^2.0.2",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "@types/pluralize": "^0.0.29",
+    "@types/lodash": "^4.14.112",
     "ts-loader": "^4.4.2",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2",
     "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-serve": "^2.0.2"
   }
 }

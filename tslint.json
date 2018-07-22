@@ -18,6 +18,7 @@
         },
         "trailing-comma": false,
         "object-literal-key-quotes": false,
-        "arrow-parens": false
+        "arrow-parens": false,
+        "object-literal-sort-keys": false
     }
 }

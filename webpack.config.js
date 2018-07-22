@@ -1,4 +1,5 @@
 const path = require('path')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const config = {
     entry: './src/index.ts',
@@ -30,6 +31,13 @@ module.exports = (env, argv) => {
     if (argv === undefined || argv.mode !== 'production') {
         config.devtool = 'inline-source-map'
         config.mode = 'development'
+    } else {
+        config.plugins = [
+            new BundleAnalyzerPlugin({
+                openAnalyzer: true,
+                analyzerMode: 'static'
+            })
+        ]
     }
 
     return config
