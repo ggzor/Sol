@@ -20,13 +20,7 @@ function main() {
                 t => !t.startsWith('0')
             )
 
-            const nodes = map(texts, (t, i) => {
-                const classes: Record<string, boolean> = { subtitle: true };
-                classes[`is-${i + 1}`] = true;
-                return h1({ class: classes }, t);
-            })
-
-            return div(nodes)
+            return div(map(texts, t => h1(t)))
         })
     }
 }
