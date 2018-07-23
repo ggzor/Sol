@@ -25,10 +25,10 @@
     "@cycle/run": "^4.4.0",
     "date-fns": "^1.29.0",
     "lodash-es": "^4.17.10",
-    "pluralize": "^7.0.0",
     "xstream": "^11.7.0"
   },
   "devDependencies": {
+    "materialize-css": "^1.0.0-rc.2",
     "webpack-bundle-analyzer": "^2.13.1",
     "@types/pluralize": "^0.0.29",
     "@types/lodash-es": "^4.17.0",
