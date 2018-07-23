@@ -4,6 +4,7 @@
   "description": "Te amo",
   "private": true,
   "scripts": {
+    "build-analyze": "webpack --mode=production --analyze",
     "build": "webpack --mode=production",
     "serve": "webpack-serve --host 0.0.0.0"
   },
@@ -28,14 +29,22 @@
     "xstream": "^11.7.0"
   },
   "devDependencies": {
-    "materialize-css": "^1.0.0-rc.2",
-    "webpack-bundle-analyzer": "^2.13.1",
-    "@types/pluralize": "^0.0.29",
     "@types/lodash-es": "^4.17.0",
+    "@types/pluralize": "^0.0.29",
+    "css-loader": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
     "ts-loader": "^4.4.2",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.1",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.1.0",
     "webpack-serve": "^2.0.2"
   }

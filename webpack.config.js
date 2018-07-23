@@ -1,5 +1,32 @@
-const path = require('path')
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
+const cssLoader = {
+    loader: 'css-loader',
+    options: {
+        minimize: false,
+        sourceMap: true
+    }
+};
+
+const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+        sourceMap: true
+    }
+};
+
+const scssLoading = (firstLoaders) => ({
+    test: /\.(sc|sa|c)ss$/,
+    use: [
+        ...firstLoaders,
+        cssLoader,
+        sassLoader
+    ]
+});
 
 const config = {
     entry: './src/index.ts',
@@ -24,21 +51,52 @@ const config = {
                 server: '0.0.0.0',
             }
         }
-    }
-}
+    },
+    plugins: []
+};
 
-module.exports = (env, argv) => {
-    if (argv === undefined || argv.mode !== 'production') {
-        config.devtool = 'inline-source-map'
-        config.mode = 'development'
-    } else {
-        config.plugins = [
+module.exports = (_, argv) => {
+    const devMode = argv ? argv.mode !== 'production' : true;
+    const analyze = argv ? argv.analyze : false;
+
+    if (analyze) {
+        config.plugins.push(
             new BundleAnalyzerPlugin({
                 openAnalyzer: true,
                 analyzerMode: 'static'
             })
-        ]
+        );
     }
 
-    return config
-}
+    config.plugins.push(
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css'
+        })
+    );
+
+    if (devMode) {
+        config.devtool = 'inline-source-map';
+        config.mode = 'development';
+        config.module.rules.push(scssLoading(['style-loader']));
+    } else {
+        cssLoader.options.minimize = true;
+        cssLoader.options.sourceMap = false;
+        sassLoader.options.sourceMap = false;
+
+        config.module.rules.push(scssLoading([MiniCssExtractPlugin.loader]));
+
+        config.optimization = {
+            minimizer: [
+                new UglifyJsPlugin({
+                    cache: true,
+                    parallel: true,
+                    sourceMap: true
+                }),
+                new OptimizeCSSAssetsPlugin({})
+            ]
+        };
+    }
+
+    return config;
+};

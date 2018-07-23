@@ -5,6 +5,8 @@ import * as es from 'date-fns/locale/es'
 import filter from 'lodash/filter'
 import map from 'lodash/map'
 import xs from 'xstream'
+import '../src/styles/default.scss'
+import '../src/styles/layout.scss'
 
 type DiffUnit = 's' | 'm' | 'h' | 'd' | 'M' | 'Y'
 
