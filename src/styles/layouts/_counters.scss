@@ -1,0 +1,19 @@
+.counters {
+    display: flex;
+    grid-area: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0;
+}
+
+$startSize: 1em;
+$multiplier: 0.3;
+$endCounterSize: 6;
+@for $i from 1 through $endCounterSize {
+    .counter-#{$i} {
+        font-size: $startSize + ($multiplier * ($endCounterSize - $i));
+        margin: 0;
+        margin-bottom: 6px;
+    }
+}

@@ -7,13 +7,12 @@ import filter from 'lodash/filter'
 import map from 'lodash/map'
 import 'materialize-css/sass/materialize.scss'
 import xs from 'xstream'
-import '../src/styles/default.scss'
-import '../src/styles/layout.scss'
+import './styles/all.scss'
 
 type DiffUnit = 's' | 'm' | 'h' | 'd' | 'M' | 'Y'
 
 function main() {
-    const initialDate = new Date('2018-02-26T12:00:00-06:00')
+    const initialDate = new Date('2018-02-26T10:00:00-06:00')
     const keys: DiffUnit[] = ['Y', 'M', 'd', 'h', 'm', 's']
 
     return {
@@ -38,7 +37,7 @@ function main() {
 }
 
 const drivers = {
-    DOM: makeDOMDriver('#app')
+    DOM: makeDOMDriver('.counters')
 }
 
 run(main, drivers)
@@ -54,3 +53,5 @@ for (let i = 2; i <= 6; i++) {
 }
 
 setTimeout(() => TweenMax.to('.counters', 1, { opacity: 0.8 }), 2000)
+TweenMax.to('#ardilla, #contenedorCorazon, #paquetito', 1, { opacity: 0.8, delay: 2 })
+TweenMax.to('#corazon', 0.8, { fill: '#1E4E83', yoyo: true, repeat: -1, delay: 5, repeatDelay: 5 })

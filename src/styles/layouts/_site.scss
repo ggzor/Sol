@@ -1,0 +1,6 @@
+.site {
+    display: grid;
+    grid-area: full;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "left center right";
+}

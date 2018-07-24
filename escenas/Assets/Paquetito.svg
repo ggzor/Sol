@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1" viewBox="0 0 504 504" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g>
+    <path d="M16 134l236 118 236-118v252L252 504 16 386V134z" fill="#49b0db"/>
+    <path d="M16 158v73l235 116 237-116v-73L252 273 16 158z" fill="#429ec5"/>
+    <path d="M252 504V252L32 142H16v244l236 118z" fill="#45a7d0"/>
+    <path d="M16 158v73l235 116 1-1v-73L16 158z" fill="#3e96bb"/>
+    <path d="M0 126L252 0l252 126v16L252 268 0 143v-17z" fill="#58c0eb"/>
+  </g>
+  <path d="M397 40c-9-15-26-24-47-24-48 0-81 44-98 73-16-29-50-73-98-73-30 0-52 19-52 44 0 45 50 74 148 74s152-38 152-74c0-7-2-14-5-20zM165 88c-11-7-15-16-15-21 0-7 6-12 15-12 21 0 38 28 48 47-25-2-40-8-48-14zm174 0c-8 6-23 12-48 14 10-19 26-47 48-47 9 0 15 5 15 12 0 5-3 14-15 21z" fill="#efefef"/>
+  <path d="M0 126l252 123 252-123v82L251 331 0 208v-82z" fill="#4cb6e2"/>
+  <path d="m347 214v-9l-95-51-94 51v9l-63-28v-12l154-82 3 2 3-2 155 81v13l-63 28z" fill="#efefef"/>
+  <path d="M347 205v251l63-31V173l-63 32z" fill="#dcdcdc"/>
+  <path d="M95 425l63 32V205l-63-32v252z" fill="#d1d1d1"/>
+</svg>
