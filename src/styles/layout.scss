@@ -1,15 +1,49 @@
+.parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "full";
+}
+
+.background-shapes-container {
+    grid-area: full;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center
+}
+
+.background-shapes {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding: 0;
+}
+
 .main {
-    height: 100%;
+    grid-area: full;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr auto;
-    grid-template-areas: 
-        "left main right"
-        "left center right";
+    grid-template-areas: "left main right" "left center right";
 }
 
 .counters {
     display: flex;
     grid-area: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0;
+}
+
+$startSize: 1em;
+$multiplier: 0.3;
+$endCounterSize: 6;
+@for $i from 1 through $endCounterSize {
+    .counter-#{$i} {
+        font-size: $startSize + ($multiplier * ($endCounterSize - $i));
+        margin: 0;
+        margin-bottom: 6px;
+    }
 }

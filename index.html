@@ -10,12 +10,33 @@
 </head>
 
 <body>
-    <div class="main">
-        <section class="counters">
-            <div id="app">
-
-            </div>
-        </section>
+    <div class="parent">
+        <div class="background-shapes-container">
+            <svg xmlns="http://www.w3.org/2000/svg" id="SVGRoot" viewBox="0 0 1366 768" preserveAspectRatio="xMidYMax slice" class="background-shapes">
+                <defs>
+                    <linearGradient id="linearGradient1578" x1="641.7" x2="637.4" y1="762" y2="4" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#e66e39" />
+                        <stop offset=".41" stop-color="#8d576f" />
+                        <stop offset=".66" stop-color="#3b4372" />
+                        <stop offset="1" stop-color="#1e1c44" />
+                    </linearGradient>
+                    <filter id="filter2734" width="1.05" height="1.05" x="-.02" y="-.02" color-interpolation-filters="sRGB">
+                        <feGaussianBlur stdDeviation=".5" />
+                    </filter>
+                </defs>
+                <path id="fondo" fill="url(#linearGradient1578)" d="M0 0h1366v768H0z" />
+                <g transform="matrix(2 0 0 2 83 -218)">
+                    <circle id="sol6" cx="300" cy="468" r="300" fill="#c3655d" opacity=".05" />
+                    <circle id="sol5" cx="300" cy="468" r="250" fill="#dc714d" opacity=".07" />
+                    <circle id="sol4" cx="300" cy="468" r="200" fill="#e77c4e" opacity=".1" />
+                    <circle id="sol3" cx="300" cy="468" r="150" fill="#f0874d" opacity=".13" />
+                    <circle id="sol2" cx="300" cy="468" r="100" fill="#f69247" opacity=".15" />
+                    <circle id="sol1" cx="300" cy="468" r="25" fill="#fbfbfb" filter="url(#filter2734)" />
+                </g>
+            </svg>
+        </div>
+        <div id="app" class="main">
+        </div>
     </div>
 </body>
 

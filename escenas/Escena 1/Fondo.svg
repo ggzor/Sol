@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SVGRoot" version="1.1" viewBox="0 0 1366 768" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="linearGradient1578" x1="641.7" x2="637.4" y1="762" y2="4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e66e39" offset="0"/>
+      <stop stop-color="#8d576f" offset=".4078"/>
+      <stop stop-color="#3b4372" offset=".6611"/>
+      <stop stop-color="#1e1c44" offset="1"/>
+    </linearGradient>
+    <filter id="filter2734" x="-.024" y="-.024" width="1.048" height="1.048" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  <g>
+    <rect id="fondo" width="1366" height="768" fill="url(#linearGradient1578)"/>
+  </g>
+  <g>
+    <g transform="matrix(2,0,0,2,83,-218)">
+      <circle id="sol6" cx="300" cy="468" r="300" fill="#c3655d" opacity=".05"/>
+      <circle id="sol5" cx="300" cy="468" r="250" fill="#dc714d" opacity=".075"/>
+      <circle id="sol4" cx="300" cy="468" r="200" fill="#e77c4e" opacity=".1"/>
+      <circle id="sol3" cx="300" cy="468" r="150" fill="#f0874d" opacity=".125"/>
+      <circle id="sol2" cx="300" cy="468" r="100" fill="#f69247" opacity=".15"/>
+      <circle id="sol1" cx="300" cy="468" r="25" fill="#fbfbfb" filter="url(#filter2734)"/>
+    </g>
+  </g>
+</svg>
