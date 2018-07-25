@@ -16,7 +16,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="Fondo.svg">
+   sodipodi:docname="FondoInk.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497474"
-     inkscape:cx="767.31443"
-     inkscape:cy="460.07944"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="671.1971"
+     inkscape:cy="335.0439"
      inkscape:document-units="px"
-     inkscape:current-layer="g1626"
+     inkscape:current-layer="SVGRoot"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -37,15 +37,7 @@
      inkscape:window-maximized="1"
      inkscape:lockguides="true"
      showguides="true"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="683,437.14286"
-       orientation="1,0"
-       id="guide1628"
-       inkscape:locked="true"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-  </sodipodi:namedview>
+     inkscape:guide-bbox="true" />
   <defs
      id="defs10">
     <linearGradient
@@ -119,9 +111,85 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Luna"
+     transform="translate(-22.223356,115.15739)"
+     style="opacity:0.61299995"
+     sodipodi:insensitive="true">
+    <g
+       id="luna"
+       transform="matrix(0.11867384,-0.04011685,0.04011685,0.11867384,816.42872,209.0312)">
+      <g
+         id="g4607">
+        <path
+           style="fill:#ccd6dd"
+           d="M 233.94727,0.95507812 C 102.87645,12.137115 0,122.03074 0,256 0,397.4 114.6,512 256,512 351.76467,512 435.22249,459.42541 479.12695,381.57031 A 285.28815,258.16949 0 0 1 199.59375,123.66016 285.28815,258.16949 0 0 1 233.94727,0.95507812 Z M 149.30078,71.099609 c 27.5,0 49.79883,22.300782 49.79883,49.800781 0,27.5 -22.29883,49.79883 -49.79883,49.79883 -27.5,0 -49.80078,-22.29883 -49.80078,-49.79883 0,-27.499999 22.30078,-49.800781 49.80078,-49.800781 z M 42.699219,241.80078 c 7.9,0 14.201172,6.39922 14.201172,14.19922 0,7.9 -6.401172,14.19922 -14.201172,14.19922 C 34.799219,270.19922 28.5,263.8 28.5,256 c 0,-7.9 6.399219,-14.19922 14.199219,-14.19922 z m 99.500001,57 c 15.7,0 28.40039,12.69844 28.40039,28.39844 0.1,15.6 -12.70039,28.40039 -28.40039,28.40039 -15.7,0 -28.39844,-12.70039 -28.39844,-28.40039 0,-15.7 12.69844,-28.39844 28.39844,-28.39844 z M 348.40039,355.5 c 27.5,0 49.79883,22.30078 49.79883,49.80078 0,27.5 -22.19883,49.79883 -49.79883,49.79883 -27.5,0 -49.80078,-22.29883 -49.80078,-49.79883 0,-27.5 22.30078,-49.80078 49.80078,-49.80078 z m -135.09961,71.19922 c 7.9,0 14.19922,6.40117 14.19922,14.20117 0.1,7.9 -6.29922,14.19922 -14.19922,14.19922 -7.9,0 -14.20117,-6.39922 -14.20117,-14.19922 0,-7.9 6.40117,-14.20117 14.20117,-14.20117 z"
+           id="path2"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4"
+           d="m 149.30039,71 c -27.5,0 -49.8,22.3 -49.8,49.8 0,27.5 22.3,49.8 49.8,49.8 27.5,0 49.8,-22.3 49.8,-49.8 0,-27.5 -22.3,-49.8 -49.8,-49.8 z"
+           style="fill:#b8c5cd" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path8"
+           d="m 348.40039,355.5 c -27.5,0 -49.8,22.3 -49.8,49.8 0,27.5 22.3,49.8 49.8,49.8 27.5,0 49.8,-22.3 49.8,-49.8 0,-27.6 -22.2,-49.8 -49.8,-49.8 z"
+           style="fill:#b8c5cd" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path12"
+           d="m 42.70039,241.7 c -7.9,0 -14.2,6.4 -14.2,14.2 0,7.9 6.4,14.2 14.2,14.2 7.9,0 14.2,-6.4 14.2,-14.2 0,-7.9 -6.4,-14.2 -14.2,-14.2 z"
+           style="fill:#b8c5cd" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path16"
+           d="m 213.30039,426.6 c -7.9,0 -14.2,6.4 -14.2,14.2 0,7.9 6.4,14.2 14.2,14.2 7.9,0 14.2,-6.4 14.2,-14.2 0.1,-7.9 -6.3,-14.2 -14.2,-14.2 z"
+           style="fill:#b8c5cd" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path20"
+           d="m 142.20039,298.6 c -15.7,0 -28.4,12.7 -28.4,28.4 0,15.7 12.7,28.4 28.4,28.4 15.7,0 28.4,-12.7 28.4,-28.4 0.1,-15.7 -12.7,-28.4 -28.4,-28.4 z"
+           style="fill:#b8c5cd" />
+      </g>
+      <g
+         id="g24" />
+      <g
+         id="g26" />
+      <g
+         id="g28" />
+      <g
+         id="g30" />
+      <g
+         id="g32" />
+      <g
+         id="g34" />
+      <g
+         id="g36" />
+      <g
+         id="g38" />
+      <g
+         id="g40" />
+      <g
+         id="g42" />
+      <g
+         id="g44" />
+      <g
+         id="g46" />
+      <g
+         id="g48" />
+      <g
+         id="g50" />
+      <g
+         id="g52" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Sol"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g1626"
        transform="matrix(2,0,0,2,83,-218)">

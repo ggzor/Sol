@@ -2,11 +2,12 @@ import { makeDOMDriver, p, section } from '@cycle/dom'
 import { run } from '@cycle/run'
 import distanceInWordsStrict from 'date-fns/distance_in_words_strict'
 import * as es from 'date-fns/locale/es'
-import { Power3, TweenMax } from 'gsap';
 import filter from 'lodash/filter'
 import map from 'lodash/map'
 import 'materialize-css/sass/materialize.scss'
 import xs from 'xstream'
+import { applyAnimations } from './animations'
+import { putStars } from './stars'
 import './styles/all.scss'
 
 type DiffUnit = 's' | 'm' | 'h' | 'd' | 'M' | 'Y'
@@ -41,17 +42,5 @@ const drivers = {
 }
 
 run(main, drivers)
-
-for (let i = 2; i <= 6; i++) {
-    TweenMax.to(`#sol${i}`, 3 + i * 1, {
-        y: '-=10',
-        ease: Power3.easeOut,
-        repeat: -1,
-        yoyo: true,
-        yoyoEase: Power3.easeOut
-    })
-}
-
-setTimeout(() => TweenMax.to('.counters', 1, { opacity: 0.8 }), 2000)
-TweenMax.to('#ardilla, #contenedorCorazon, #paquetito', 1, { opacity: 0.8, delay: 2 })
-TweenMax.to('#corazon', 0.8, { fill: '#1E4E83', yoyo: true, repeat: -1, delay: 5, repeatDelay: 5 })
+putStars()
+applyAnimations()

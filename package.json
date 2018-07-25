@@ -24,14 +24,18 @@
   "dependencies": {
     "@cycle/dom": "^20.4.0",
     "@cycle/run": "^4.4.0",
+    "css-element-queries": "^1.0.2",
     "date-fns": "^1.29.0",
     "gsap": "^2.0.1",
     "lodash-es": "^4.17.10",
+    "rxjs": "^6.2.2",
+    "svg.js": "^2.6.5",
     "xstream": "^11.7.0"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.0",
     "@types/gsap": "^1.19.2",
+    "@types/lodash-es": "^4.17.0",
+    "@types/materialize-css": "^1.0.4",
     "@types/pluralize": "^0.0.29",
     "css-loader": "^1.0.0",
     "materialize-css": "^1.0.0-rc.2",
